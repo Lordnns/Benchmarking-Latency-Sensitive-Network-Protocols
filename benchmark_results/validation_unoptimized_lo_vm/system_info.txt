@@ -1,0 +1,16 @@
+=== Unoptimized Validation System Info ===
+Timestamp:    2026-09-30T14:23:24-04:00
+Transport:    lo
+CPU:          QEMU Virtual CPU version 2.5+
+Cores:        6 (isolated: )
+SMT active:   0  (0=off, 1=on)
+Freq boost:   ?  (1=on)
+Governor:     ?
+Kernel:       Linux debian 6.12.107+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+cmdline:      BOOT_IMAGE=/boot/vmlinuz-6.12.107+deb13-amd64 root=UUID=8d9acfe5-8348-4338-8c15-54fa033bd0d1 ro quiet
+Scheduling:   none (no taskset, no chrt) — SCHED_OTHER on housekeeping cores
+Runs:         30 | measured 60s + 10s warmup
+
+--- netem applied: loss 2% ---
+dev lo:
+qdisc netem 8001: root refcnt 2 limit 1000 loss 2% seed 2390720678560986105

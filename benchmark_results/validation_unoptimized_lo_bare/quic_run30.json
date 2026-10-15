@@ -1,0 +1,77 @@
+{
+  "global": {
+    "sent": 4719,
+    "received": 4577,
+    "lost": 142,
+    "loss_rate_percent": 3.009112100021191,
+    "throughput": {
+      "duration_sec": 58.98097,
+      "packet_rate_pps": 77.60130089416977,
+      "goodput_mbps": 0.6208104071533581
+    },
+    "latency": {
+      "min_us": 76,
+      "avg_us": 419.6790474109679,
+      "max_us": 31878,
+      "jitter_us": 1869.1879557853497,
+      "p50_us": 219,
+      "p90_us": 256,
+      "p95_us": 271,
+      "p99_us": 14888
+    }
+  },
+  "streams": [
+    {
+      "stream_id": 4,
+      "stream_index": 1,
+      "stream_type": "Unreliable",
+      "stats": {
+        "sent": 3540,
+        "received": 3398,
+        "lost": 142,
+        "loss_rate_percent": 4.011299435028248,
+        "throughput": {
+          "duration_sec": 58.98097,
+          "packet_rate_pps": 57.61180258649527,
+          "goodput_mbps": 0.4608944206919622
+        },
+        "latency": {
+          "min_us": 76,
+          "avg_us": 218.12389640965273,
+          "max_us": 975,
+          "jitter_us": 86.85102024367097,
+          "p50_us": 218,
+          "p90_us": 252,
+          "p95_us": 259,
+          "p99_us": 665
+        }
+      }
+    },
+    {
+      "stream_id": 11,
+      "stream_index": 2,
+      "stream_type": "Reliable",
+      "stats": {
+        "sent": 1179,
+        "received": 1179,
+        "lost": 0,
+        "loss_rate_percent": 0.0,
+        "throughput": {
+          "duration_sec": 58.883725,
+          "packet_rate_pps": 20.022510464478938,
+          "goodput_mbps": 0.1601800837158315
+        },
+        "latency": {
+          "min_us": 84,
+          "avg_us": 1000.5818490245971,
+          "max_us": 31878,
+          "jitter_us": 3617.6329381740497,
+          "p50_us": 227,
+          "p90_us": 269,
+          "p95_us": 789,
+          "p99_us": 16275
+        }
+      }
+    }
+  ]
+}

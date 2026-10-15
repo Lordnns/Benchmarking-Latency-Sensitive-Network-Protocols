@@ -1,0 +1,5 @@
+Packet Loss: 2% (symmetric)
+mode: optimized
+netem args: loss 2%
+qdisc netem 8017: root refcnt 9 limit 1000 loss 2% seed 18360618838160195150
+qdisc netem 8018: root refcnt 9 limit 1000 loss 2% seed 13357705521150071629

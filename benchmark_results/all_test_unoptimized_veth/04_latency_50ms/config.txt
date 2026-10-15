@@ -1,0 +1,5 @@
+Latency: 50ms ±10ms each way (RTT ~100ms)
+mode: unoptimized
+netem args: delay 50ms 10ms distribution normal
+qdisc netem 8005: root refcnt 17 limit 1000 delay 50ms  10ms seed 5485664646999034225
+qdisc netem 8006: root refcnt 17 limit 1000 delay 50ms  10ms seed 14594600730337154381

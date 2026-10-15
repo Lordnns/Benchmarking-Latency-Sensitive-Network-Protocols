@@ -1,0 +1,5 @@
+No Network Emulation (veth direct)
+mode: unoptimized
+netem args: 
+qdisc noqueue 0: root refcnt 2 
+qdisc noqueue 0: root refcnt 2 

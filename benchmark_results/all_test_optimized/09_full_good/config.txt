@@ -1,0 +1,5 @@
+Good (Cable/DSL): 30ms ±5ms delay, 0.1% loss (RTT ~60ms)
+mode: optimized
+netem args: delay 30ms 5ms distribution normal loss 0.1%
+qdisc netem 801d: root refcnt 9 limit 1000 delay 30ms  5ms loss 0.1% seed 14256651516357238605
+qdisc netem 801e: root refcnt 9 limit 1000 delay 30ms  5ms loss 0.1% seed 3418271700415358292

@@ -1,0 +1,17 @@
+=== Optimized Validation System Info ===
+Timestamp:    2026-09-25T20:11:13-04:00
+CPU:          AMD Ryzen 7 3700X 8-Core Processor
+Cores:        4 (isolated: 2-5)
+Virt:         none
+Kernel:       Linux bench-linux 6.12.107+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+cmdline:      BOOT_IMAGE=/vmlinuz-6.12.107+deb13-amd64 root=/dev/mapper/bench--linux--vg-root ro amd_pstate=disable isolcpus=2,3,4,5 nohz_full=2,3,4,5 rcu_nocbs=2,3,4,5 processor.max_cstate=0 nosoftlockup quiet
+Governor:     performance
+Server cores: 2,4 | Client cores: 3,5
+Scheduling:   taskset -c <cores> + chrt -f 50 (SCHED_FIFO)
+Runs:         30 | measured 60s + 10s warmup
+
+--- netem applied (symmetric, both legs): loss 2% ---
+ns_client / veth-cli:
+qdisc netem 8005: root refcnt 9 limit 1000 loss 2% seed 4551244753912715715
+ns_server / veth-srv:
+qdisc netem 8006: root refcnt 9 limit 1000 loss 2% seed 8466928616861707461

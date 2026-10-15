@@ -1,0 +1,4 @@
+Latency: 30ms ±5ms each way (RTT ~60ms)
+mode: unoptimized
+netem args: delay 30ms 5ms distribution normal
+qdisc netem 8014: root refcnt 2 limit 1000 delay 30ms  5ms seed 10907765315654707711

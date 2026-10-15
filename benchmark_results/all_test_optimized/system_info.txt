@@ -1,0 +1,38 @@
+=== Benchmark System Info ===
+Timestamp: 2026-10-13T10:45:17-04:00
+Mode: optimized
+
+--- Hardware ---
+CPU: AMD Ryzen 7 3700X 8-Core Processor
+Cores: 8 (isolated: 2-5)
+RAM: 62Gi
+SMT active: 0  (0=off, 1=on)
+Freq boost: 0  (1=on)
+Governor: performance
+Virt: none
+
+--- CPU Frequency ---
+cpu MHz		: 3593.263
+cpu MHz		: 3592.431
+cpu MHz		: 3600.000
+cpu MHz		: 3600.000
+cpu MHz		: 3600.000
+cpu MHz		: 3600.000
+cpu MHz		: 3593.430
+cpu MHz		: 3593.334
+
+--- Kernel ---
+Linux bench-linux 6.12.107+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+
+--- Boot Parameters ---
+BOOT_IMAGE=/vmlinuz-6.12.107+deb13-amd64 root=/dev/mapper/bench--linux--vg-root ro amd_pstate=disable isolcpus=2,3,4,5 nohz_full=2,3,4,5 rcu_nocbs=2,3,4,5 processor.max_cstate=0 nosoftlockup quiet
+
+--- Rust Toolchain ---
+rustc 1.98.1 (48a229cea 2026-09-01)
+
+--- Test Parameters ---
+Duration: 60s + 10s warmup
+Runs per config: 10
+Protocols: udp tcp quic gns
+Server cores: 2,4 | Client cores: 3,5
+Scheduling: taskset + SCHED_FIFO 50

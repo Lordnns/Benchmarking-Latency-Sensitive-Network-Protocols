@@ -1,0 +1,5 @@
+Bad (WiFi/4G): 80ms ±20ms delay, 2% loss (RTT ~160ms)
+mode: unoptimized
+netem args: delay 80ms 20ms distribution normal loss 2%
+qdisc netem 8011: root refcnt 17 limit 1000 delay 80ms  20ms loss 2% seed 9121926895094028588
+qdisc netem 8012: root refcnt 17 limit 1000 delay 80ms  20ms loss 2% seed 5041191846221634511

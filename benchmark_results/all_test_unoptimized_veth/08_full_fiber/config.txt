@@ -1,0 +1,5 @@
+Fiber: 5ms ±1ms delay (RTT ~10ms)
+mode: unoptimized
+netem args: delay 5ms 1ms distribution normal
+qdisc netem 800d: root refcnt 17 limit 1000 delay 5ms  1ms seed 3283118428169556145
+qdisc netem 800e: root refcnt 17 limit 1000 delay 5ms  1ms seed 3895496835795096542

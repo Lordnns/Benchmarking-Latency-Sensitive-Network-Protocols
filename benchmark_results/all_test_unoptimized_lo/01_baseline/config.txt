@@ -1,0 +1,4 @@
+No Network Emulation (loopback direct)
+mode: unoptimized
+netem args: 
+qdisc noqueue 0: root refcnt 2 
