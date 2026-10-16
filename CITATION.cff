@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it using the metadata below."
+type: software
+title: "Benchmarking Latency-Sensitive Network Protocols: code, scripts and data"
+abstract: >-
+  Artifact for the paper "Benchmarking Latency-Sensitive Network Protocols:
+  A Reproducible Methodology for Sub-Millisecond Measurements". Contains the
+  game_sockets Rust library (UDP, TCP, QUIC and GameNetworkingSockets behind
+  one game-style API), the echo server, traffic-generating client and
+  statistics tools, the Bash/Python scripts that set up network namespaces,
+  netem and CPU isolation and run the test matrix, and the raw per-packet
+  data: 400-run matrices (4 protocols x 10 network scenarios x 10 runs) for
+  the optimized, unoptimized-loopback and unoptimized-veth configurations,
+  plus 30-run QUIC validation sets.
+authors:
+  - given-names: Valère
+    family-names: Plantevin
+    affiliation: Université du Québec à Chicoutimi
+  - given-names: Samuel
+    family-names: Martin-Grisé
+    affiliation: Université du Québec à Chicoutimi
+  - given-names: Yannick
+    family-names: Francillette
+    affiliation: Université du Québec à Chicoutimi
+repository-code: "https://github.com/Lordnns/Benchmarking-Latency-Sensitive-Network-Protocols"
+license: MIT
+version: 1.0.0
+date-released: "2026-10-16"
+keywords:
+  - benchmarking methodology
+  - QUIC
+  - latency measurement
+  - network emulation
+  - CPU isolation
+  - netem
+  - GameNetworkingSockets
+preferred-citation:
+  type: article
+  title: "Benchmarking Latency-Sensitive Network Protocols: A Reproducible Methodology for Sub-Millisecond Measurements"
+  authors:
+    - given-names: Valère
+      family-names: Plantevin
+      affiliation: Université du Québec à Chicoutimi
+    - given-names: Samuel
+      family-names: Martin-Grisé
+      affiliation: Université du Québec à Chicoutimi
+    - given-names: Yannick
+      family-names: Francillette
+      affiliation: Université du Québec à Chicoutimi
+  year: 2026
